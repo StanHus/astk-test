@@ -106,12 +106,6 @@ class AdvancedAIAgent:
             "expert": ["quantum", "distributed", "concurrent", "enterprise", "multi-domain"]
         }
 
-    def _add_realistic_delay(self):
-        """Add a randomized delay to simulate realistic processing time"""
-        # Random delay between 0.5 to 3.0 seconds
-        delay = random.uniform(2.5, 20.0)
-        time.sleep(delay)
-
     def analyze_query(self, query: str) -> AnalysisResult:
         """Advanced query analysis with deep understanding"""
         query_lower = query.lower()
@@ -213,7 +207,6 @@ class AdvancedAIAgent:
 
     def generate_mathematical_response(self, query: str, analysis: AnalysisResult) -> str:
         """Advanced mathematical processing with step-by-step solutions"""
-        self._add_realistic_delay()
 
         # Enhanced arithmetic parsing
         arithmetic_match = re.search(
@@ -286,7 +279,6 @@ class AdvancedAIAgent:
 
     def generate_security_response(self, query: str, analysis: AnalysisResult) -> str:
         """Advanced security analysis and recommendations"""
-        self._add_realistic_delay()
 
         return (
             f"🔒 Advanced Security Analysis (Complexity: {analysis.complexity_level})\n\n"
@@ -318,7 +310,6 @@ class AdvancedAIAgent:
 
     def generate_architectural_response(self, query: str, analysis: AnalysisResult) -> str:
         """Sophisticated system architecture design"""
-        self._add_realistic_delay()
 
         return (
             f"🏗️ Enterprise Architecture Design (Complexity: {analysis.complexity_level})\n\n"
@@ -350,7 +341,6 @@ class AdvancedAIAgent:
 
     def generate_optimization_response(self, query: str, analysis: AnalysisResult) -> str:
         """Advanced performance optimization strategies"""
-        self._add_realistic_delay()
 
         return (
             f"⚡ Performance Optimization Strategy (Complexity: {analysis.complexity_level})\n\n"
@@ -381,7 +371,6 @@ class AdvancedAIAgent:
 
     def generate_compliance_response(self, query: str, analysis: AnalysisResult) -> str:
         """Comprehensive compliance and governance framework"""
-        self._add_realistic_delay()
 
         return (
             f"⚖️ Compliance & Governance Framework (Complexity: {analysis.complexity_level})\n\n"
@@ -413,7 +402,6 @@ class AdvancedAIAgent:
 
     def generate_innovation_response(self, query: str, analysis: AnalysisResult) -> str:
         """Advanced innovation and emerging technology insights"""
-        self._add_realistic_delay()
 
         return (
             f"🚀 Innovation & Emerging Technologies (Complexity: {analysis.complexity_level})\n\n"
@@ -445,7 +433,6 @@ class AdvancedAIAgent:
 
     def generate_strategic_response(self, query: str, analysis: AnalysisResult) -> str:
         """Strategic business and technical analysis"""
-        self._add_realistic_delay()
 
         return (
             f"💼 Strategic Analysis & Planning (Complexity: {analysis.complexity_level})\n\n"
@@ -477,7 +464,6 @@ class AdvancedAIAgent:
 
     def generate_reasoning_response(self, query: str, analysis: AnalysisResult) -> str:
         """Advanced logical reasoning and problem-solving"""
-        self._add_realistic_delay()
 
         return (
             f"🧠 Advanced Reasoning Analysis (Complexity: {analysis.complexity_level})\n\n"
@@ -508,7 +494,6 @@ class AdvancedAIAgent:
 
     def generate_creative_response(self, query: str, analysis: AnalysisResult) -> str:
         """Creative and innovative thinking approaches"""
-        self._add_realistic_delay()
 
         creative_elements = [
             "Design Thinking methodology with user-centered innovation",
@@ -550,7 +535,6 @@ class AdvancedAIAgent:
 
     def generate_general_response(self, query: str, analysis: AnalysisResult) -> str:
         """Enhanced general-purpose responses with contextual intelligence"""
-        self._add_realistic_delay()
 
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
